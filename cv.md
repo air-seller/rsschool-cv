@@ -18,3 +18,8 @@ My love for programming has been growing since childhood. When I was a little bo
 - **Frameworks:** *Bootstrap 5, jQuery*
 - **Other skills:** *Googling, Teaching, Сomposing & Mixing/Mastering music, Video Editing*
 
+## Code examples:
+- [**MAY - Guitar Help**](https://may-test.airseller.name/) - *Simple guitar workshop landing page on **Bootstrap 5**.*
+- [**Beozar - Mad Clockmaker**](https://beozar.org/) - *Father's personal page with clear and simple **W3.CSS** framework.*
+- [**Museum Louvre**](https://rolling-scopes-school.github.io/air-seller-JSFEPRESCHOOL/museum/) - *Non adaptive landing page task from **RS School Stage 0** with **Flexbox**.*
+- [**My CV**](https://rsschool-cv.airseller.name/) - *Another task from **RS School** but from **Stage 1** made with **Grid CSS** and some **Flexbox**.*
