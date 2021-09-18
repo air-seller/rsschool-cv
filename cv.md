@@ -23,3 +23,11 @@ My love for programming has been growing since childhood. When I was a little bo
 - [**Beozar - Mad Clockmaker**](https://beozar.org/) - *Father's personal page with clear and simple **W3.CSS** framework.*
 - [**Museum Louvre**](https://rolling-scopes-school.github.io/air-seller-JSFEPRESCHOOL/museum/) - *Non adaptive landing page task from **RS School Stage 0** with **Flexbox**.*
 - [**My CV**](https://rsschool-cv.airseller.name/) - *Another task from **RS School** but from **Stage 1** made with **Grid CSS** and some **Flexbox**.*
+
+## Education
+- **Minsk State Musical College name after Mikhail Glinka** - *September 2007-June 2011*
+    - Variety art (instrumental music). Instrument: Electric guitar. Qualifications: Artist. Teacher. Leader of a variety band.
+
+## Online Courses:
+- **RS School** - Front-End Developement Stage 0 - *July 2021-September 2021*
+- **RS School** - Front-End Developement Stage 1 - *September 2021-present*
