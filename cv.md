@@ -32,6 +32,9 @@ My love for programming has been growing since childhood. When I was a little bo
 - **RS School** - Front-End Developement Stage 0 - *July 2021-September 2021*
 - **RS School** - Front-End Developement Stage 1 - *September 2021-present*
 
+## Languages:
+- **Russian** - native
+- **English** - A2
+
 ## Hobbies:
 - Psychology, Compose music, Gaming, Cooking, Coffee, Sport
-
