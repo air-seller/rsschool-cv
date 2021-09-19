@@ -211,3 +211,31 @@ body {
 
 /* experience section end */
 
+/* name section */
+
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 55px 0;
+}
+
+.name__heading {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    color: var(--text-dark);
+}
+
+.name__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+}
+
+/* name section end */
+
