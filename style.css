@@ -134,3 +134,29 @@ body {
 
 /* header and nav menu end */
 
+/* photo section */
+
+.photo {
+    grid-area: photo;
+    min-height: 600px;
+    background: url(assets/img/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.photo:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+/* photo section end */
+
