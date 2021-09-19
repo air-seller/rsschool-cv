@@ -1,4 +1,4 @@
-// button to top function
+// Button to top function
 const btnTop = document.getElementById('button__totop');
 const scrollFunction = () => {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -9,7 +9,7 @@ const scrollFunction = () => {
 };
 window.addEventListener('scroll', scrollFunction);
 
-// close menu function
+// Close menu function
 const btnMenu = document.querySelectorAll('.menu__item');
 const menuTogglerOffFunction = () => {
     document.getElementById('menu__toggler').checked = false
