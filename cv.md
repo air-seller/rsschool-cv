@@ -37,4 +37,4 @@ My love for programming has been growing since childhood. When I was a little bo
 - **English** - A2
 
 ## Hobbies:
-- Psychology, Compose music, Gaming, Cooking, Coffee, Sport
+- :books: Psychology, :musical_score: Compose music, :video_game: Gaming, :egg: Cooking, :coffee: Coffee, :runner: Sport
