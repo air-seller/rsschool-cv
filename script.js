@@ -1,3 +1,4 @@
+// button to top function
 const btnTop = document.getElementById('button__totop');
 const scrollFunction = () => {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
