@@ -160,3 +160,54 @@ body {
 
 /* photo section end */
 
+/* contacts section */
+
+.contacts {
+    grid-area: contacts;
+    color: var(--white);
+    background-color: var(--middle-grey);
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+    padding: 40px 55px;
+}
+
+/* contacts section end */
+
+/* education section */
+
+.education {
+    grid-area: education;
+    color: var(--white);
+    background-color: var(--dark-grey);
+}
+
+.education__music {
+    padding: 40px 55px 40px 55px;
+}
+
+.education__online {
+    padding: 0px 55px 40px 55px;
+}
+
+.education summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* education section end */
+
+/* experience section */
+
+.experience {
+    grid-area: experience;
+    color: var(--white);
+    background-color: var(--dark-grey);
+}
+
+/* experience section end */
+
