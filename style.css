@@ -101,3 +101,36 @@ body {
 }
 
 /* main container end */
+
+/* header and nav menu */
+
+.header {
+    position: relative;
+    grid-area: header;
+    height: 64px;
+    color: var(--white);
+    background-color: var(--middle-grey);
+}
+
+.menu__button,
+#menu__toggler {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.menu__item {
+    padding: 20px 0px;
+}
+
+.menu__item a {
+    padding: 20px 5px;
+}
+
+/* header and nav menu end */
+
