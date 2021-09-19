@@ -139,7 +139,7 @@ body {
 .photo {
     grid-area: photo;
     min-height: 600px;
-    background: url(assets/img/photo.jpg);
+    background: url(./assets/img/photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
