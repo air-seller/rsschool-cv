@@ -262,3 +262,70 @@ body {
 
 /* summary section end */
 
+/* examples section */
+
+.examples {
+    grid-area: examples;
+    color: var(--text-grey);
+}
+
+.examples__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 0px 55px;
+}
+
+.example__card {
+    position: relative;
+    flex-basis: 260px;
+    flex-grow: 1;
+}
+
+.example__card h4,
+.example__card p {
+    color: var(--white);
+}
+
+.example__card p {
+    padding: 0px 5px 5px 5px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.example__card img {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+
+.card__text {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    background: rgba(50, 50, 50, 0.75);
+}
+
+.code__example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    width: 100%;
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+.example__card:hover img {
+    filter: brightness(30%) grayscale(100%);
+}
+
+/* examples section end */
+
