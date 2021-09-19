@@ -434,3 +434,21 @@ body {
 
 /* footer end */
 
+/* headings */
+
+.contacts__heading,
+.education__heading,
+.experience__heading {
+    background-color: var(--light-grey);
+}
+
+.summary__heading,
+.examples__heading,
+.skills__heading,
+.hobbies__heading {
+    color: var(--text-dark);
+    background-color: var(--dark-white);
+}
+
+/* headings end */
+
