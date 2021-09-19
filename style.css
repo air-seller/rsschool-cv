@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+:root {
+    --text-dark: #363636;
+    --text-grey: #555555;
+    --white: #ffffff;
+    --dark-white: #ebebeb;
+    --light-grey: #424753;
+    --middle-grey: #343945;
+    --dark-grey: #2c323d;
+    --prime-color: #337ab7;
+    --filter-prime: invert(41%) sepia(51%) saturate(671%) hue-rotate(166deg) brightness(95%) contrast(90%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--prime-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+
+.video-presentation {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* main container */
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "photo name"
+        "photo summary"
+        "contacts summary"
+        "education examples"
+        "experience skills"
+        "experience hobbies"
+        "footer footer";
+    max-width: 1280px;
+    margin: 40px;
+    -webkit-box-shadow: 2px 4px 15px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 4px 15px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 4px 15px 0px rgba(50, 50, 50, 0.75);
+}
+
+.container p {
+    padding: 40px 55px;
+    line-height: 30px;
+}
+
+.container h3 {
+    border-left: var(--prime-color) 30px solid;
+    padding: 2px 25px;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* main container end */
+
+/* header and nav menu */
+
+.header {
+    position: relative;
+    grid-area: header;
+    height: 64px;
+    color: var(--white);
+    background-color: var(--middle-grey);
+}
+
+.menu__button,
+#menu__toggler {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.menu__item {
+    padding: 20px 0px;
+}
+
+.menu__item a {
+    padding: 20px 5px;
+}
+
+/* header and nav menu end */
+
+/* photo section */
+
+.photo {
+    grid-area: photo;
+    min-height: 600px;
+    background: url(./assets/img/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.photo:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+/* photo section end */
+
+/* contacts section */
+
+.contacts {
+    grid-area: contacts;
+    color: var(--white);
+    background-color: var(--middle-grey);
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+    padding: 40px 55px;
+}
+
+/* contacts section end */
+
+/* education section */
+
+.education {
+    grid-area: education;
+    color: var(--white);
+    background-color: var(--dark-grey);
+}
+
+.education__music {
+    padding: 40px 55px 40px 55px;
+}
+
+.education__online {
+    padding: 0px 55px 40px 55px;
+}
+
+.education summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* education section end */
+
+/* experience section */
+
+.experience {
+    grid-area: experience;
+    color: var(--white);
+    background-color: var(--dark-grey);
+}
+
+/* experience section end */
+
+/* name section */
+
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 55px 0;
+}
+
+.name__heading {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    color: var(--text-dark);
+}
+
+.name__text {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+}
+
+/* name section end */
+
+/* summary section */
+
+.summary {
+    grid-area: summary;
+    color: var(--text-grey);
+}
+
+.summary__info {
+    padding-bottom: 40px;
+}
+
+.summary__info li p {
+    padding: 5px 55px;
+}
+
+.summary__info li p strong {
+    width: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* summary section end */
+
+/* examples section */
+
+.examples {
+    grid-area: examples;
+    color: var(--text-grey);
+}
+
+.examples__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 0px 55px;
+}
+
+.example__card {
+    position: relative;
+    flex-basis: 260px;
+    flex-grow: 1;
+}
+
+.example__card h4,
+.example__card p {
+    color: var(--white);
+}
+
+.example__card p {
+    padding: 0px 5px 5px 5px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.example__card img {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+
+.card__text {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    background: rgba(50, 50, 50, 0.75);
+}
+
+.code__example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    width: 100%;
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+.example__card:hover img {
+    filter: brightness(30%) grayscale(100%);
+}
+
+/* examples section end */
+
+/* skills section */
+
+.skills {
+    grid-area: skills;
+    color: var(--text-grey);
+}
+
+.skills__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    gap: 15px;
+    padding: 40px 55px;
+    align-items: center;
+    justify-items: start;
+}
+
+.skills__info li p {
+    padding: 0px;
+}
+
+.skills__info li p strong {
+    width: 160px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.skills__info img {
+    vertical-align: middle;
+    transition: .3s;
+}
+
+.skills__info img:hover {
+    filter: grayscale(80%);
+}
+
+/* skills section end */
+
+/* hobbies section */
+
+.hobbies {
+    grid-area: hobbies;
+    color: var(--text-grey);
+}
+
+.hobbies__list {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 40px;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    padding: 40px 5px;
+}
+
+.hobbies__list li {
+    text-align: center;
+    width: 140px;
+}
+
+.hobbies__list img {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.hobbies__list li:hover img {
+    -webkit-filter: var(--filter-prime);
+    -moz-filter: var(--filter-prime);
+    -ms-filter: var(--filter-prime);
+    filter: var(--filter-prime);
+}
+
+/* hobbies section end */
+
+/* footer */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: var(--middle-grey);
+}
+
+.footer img {
+    height: 30px;
+    vertical-align: middle;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.footer a:hover img {
+    -webkit-filter: var(--filter-prime);
+    -moz-filter: var(--filter-prime);
+    -ms-filter: var(--filter-prime);
+    filter: var(--filter-prime);
+}
+
+/* footer end */
+
+/* headings */
+
+.contacts__heading,
+.education__heading,
+.experience__heading {
+    background-color: var(--light-grey);
+}
+
+.summary__heading,
+.examples__heading,
+.skills__heading,
+.hobbies__heading {
+    color: var(--text-dark);
+    background-color: var(--dark-white);
+}
+
+/* headings end */
+
+/* button to top */
+
+#button__totop {
+    display: inline-block;
+    position: fixed;
+    background-color: var(--prime-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    bottom: 40px;
+    right: 40px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button__totop::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    top: 22px;
+    right: 0px;
+    background-color: var(--white);
+    transform: rotate(41deg);
+}
+
+#button__totop::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    top: 22px;
+    left: 0px;
+    background-color: var(--white);
+    transform: rotate(-41deg);
+}
+
+#button__totop:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+}
+
+#button__totop:active {
+    background-color: var(--middle-grey);
+}
+
+#button__totop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* button to top end */
+
+/* adaptive */
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "header header"
+            "photo name"
+            "photo contacts"
+            "summary summary"
+            "education education"
+            "experience experience"
+            "examples examples"
+            "skills skills"
+            "hobbies hobbies"
+            "footer footer";
+    }
+
+    .name {
+        padding: 40px 55px;
+    }
+
+    .name__heading {
+        font-weight: 700;
+        font-size: calc(5vw + 70%);
+        line-height: 45px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .name__text {
+        font-weight: 400;
+        font-size: calc(2vw + 40%);
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    .skills {
+        color: var(--white);
+        background-color: var(--dark-grey);
+    }
+
+    .skills__heading {
+        color: var(--white);
+        background-color: var(--light-grey);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "photo"
+            "name"
+            "contacts"
+            "summary"
+            "education"
+            "experience"
+            "examples"
+            "skills"
+            "hobbies"
+            "footer";
+        margin: 0px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        top: 63px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        background-color: var(--middle-grey);
+        transform: translateY(-515px);
+        transition: .5s;
+    }
+
+    .menu__item {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .menu__button {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 7px;
+        top: 6px;
+        z-index: 2;
+        transition: .3s;
+    }
+
+    .menu__button span {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: 23px;
+        background-color: var(--white);
+        transition: .3s;
+    }
+
+    .menu__button span::before {
+        content: "";
+        position: absolute;
+        transform-origin: right;
+        width: 100%;
+        height: 5px;
+        bottom: 17px;
+        left: 0px;
+        background-color: var(--white);
+        transition: .3s;
+    }
+
+    .menu__button span::after {
+        content: "";
+        position: absolute;
+        transform-origin: right;
+        width: 100%;
+        height: 5px;
+        top: 17px;
+        left: 0px;
+        background-color: var(--white);
+        transition: .3s;
+    }
+
+    #menu__toggler:hover~.menu__button {
+        -webkit-filter: var(--filter-prime);
+        -moz-filter: var(--filter-prime);
+        -ms-filter: var(--filter-prime);
+        filter: var(--filter-prime);
+    }
+
+    #menu__toggler {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 7px;
+        top: 6px;
+        z-index: 3;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    #menu__toggler:checked~.menu {
+        transform: none;
+    }
+
+    #menu__toggler:checked~.menu__button span {
+        background: none;
+    }
+
+    #menu__toggler:checked~.menu__button span::before {
+        left: -7px;
+        transform: rotate(-45deg);
+    }
+
+    #menu__toggler:checked~.menu__button span::after {
+        left: -6px;
+        transform: rotate(45deg);
+    }
+
+    .name {
+        text-align: center;
+        align-items: center;
+    }
+
+    .photo {
+        background-attachment: fixed;
+    }
+
+    #button__totop {
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container p {
+        padding: 40px 5px;
+    }
+
+    .summary__info li p {
+        padding: 5px;
+    }
+
+    .contacts__info {
+        padding: 40px 5px;
+    }
+
+    .education__music {
+        padding: 40px 5px 40px 5px;
+    }
+
+    .education__online {
+        padding: 0px 5px 40px 5px;
+    }
+
+    .examples__content {
+        padding: 0px 5px;
+    }
+
+    .example__card p {
+        padding: 0px 5px 5px 5px;
+    }
+
+    .code__example {
+        font-size: 13px;
+    }
+
+    .skills__info {
+        padding: 40px 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+    }
+
+    .hobbies__list {
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .name {
+        padding: 40px 5px;
+    }
+
+    .container li,
+    .container p {
+        font-size: 14px;
+    }
+
+    .code__example {
+        font-size: 8px;
+    }
+
+    .hobbies__list {
+        grid-template-rows: repeat(6, auto);
+    }
+
+}
