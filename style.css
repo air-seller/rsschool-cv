@@ -239,3 +239,26 @@ body {
 
 /* name section end */
 
+/* summary section */
+
+.summary {
+    grid-area: summary;
+    color: var(--text-grey);
+}
+
+.summary__info {
+    padding-bottom: 40px;
+}
+
+.summary__info li p {
+    padding: 5px 55px;
+}
+
+.summary__info li p strong {
+    width: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* summary section end */
+
