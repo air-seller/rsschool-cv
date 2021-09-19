@@ -329,3 +329,42 @@ body {
 
 /* examples section end */
 
+/* skills section */
+
+.skills {
+    grid-area: skills;
+    color: var(--text-grey);
+}
+
+.skills__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    gap: 15px;
+    padding: 40px 55px;
+    align-items: center;
+    justify-items: start;
+}
+
+.skills__info li p {
+    padding: 0px;
+}
+
+.skills__info li p strong {
+    width: 160px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.skills__info img {
+    vertical-align: middle;
+    transition: .3s;
+}
+
+.skills__info img:hover {
+    filter: grayscale(80%);
+}
+
+/* skills section end */
+
