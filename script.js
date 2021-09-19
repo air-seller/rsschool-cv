@@ -9,6 +9,7 @@ const scrollFunction = () => {
 };
 window.addEventListener('scroll', scrollFunction);
 
+// close menu function
 const btnMenu = document.querySelectorAll('.menu__item');
 const menuTogglerOffFunction = () => {
     document.getElementById('menu__toggler').checked = false
