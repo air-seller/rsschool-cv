@@ -33,3 +33,23 @@ h6 {
 li {
     list-style: none;
 }
+
+a {
+    color: var(--white);
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--prime-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
