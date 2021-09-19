@@ -452,3 +452,59 @@ body {
 
 /* headings end */
 
+/* button to top */
+
+#button__totop {
+    display: inline-block;
+    position: fixed;
+    background-color: var(--prime-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    bottom: 40px;
+    right: 40px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button__totop::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    top: 22px;
+    right: 0px;
+    background-color: var(--white);
+    transform: rotate(41deg);
+}
+
+#button__totop::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    top: 22px;
+    left: 0px;
+    background-color: var(--white);
+    transform: rotate(-41deg);
+}
+
+#button__totop:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+}
+
+#button__totop:active {
+    background-color: var(--middle-grey);
+}
+
+#button__totop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* button to top end */
+
