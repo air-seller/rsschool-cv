@@ -23,6 +23,14 @@ My love for programming has been growing since childhood. When I was a little bo
 - [**Beozar - Mad Clockmaker**](https://beozar.org/) - *Father's personal page with clear and simple **W3.CSS** framework.*
 - [**Museum Louvre**](https://rolling-scopes-school.github.io/air-seller-JSFEPRESCHOOL/museum/) - *Non adaptive landing page task from **RS School Stage 0** with **Flexbox**.*
 - [**My CV**](https://rsschool-cv.airseller.name/) - *Another task from **RS School** but from **Stage 1** made with **Grid CSS** and some **Flexbox**.*
+- **Find the Squares kata** *7kyu*
+```javascript
+const findSquares = num => {
+  let a = (num + 1) / 2;
+  let b = a - 1;
+  return (a * a + '-' + b * b);
+};
+```
 
 ## :school: Education
 - **:musical_keyboard: Minsk State Musical College name after Mikhail Glinka** - *September 2007-June 2011*
