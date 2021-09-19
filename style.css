@@ -403,3 +403,34 @@ body {
 
 /* hobbies section end */
 
+/* footer */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: var(--middle-grey);
+}
+
+.footer img {
+    height: 30px;
+    vertical-align: middle;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.footer a:hover img {
+    -webkit-filter: var(--filter-prime);
+    -moz-filter: var(--filter-prime);
+    -ms-filter: var(--filter-prime);
+    filter: var(--filter-prime);
+}
+
+/* footer end */
+
